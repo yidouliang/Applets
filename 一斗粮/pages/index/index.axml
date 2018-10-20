@@ -1,0 +1,17 @@
+<view>
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}">
+		<block a:for="{{background}}">
+			<swiper-item>
+				<view class="swiper-item bc_{{item}}"></view>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<view class="openDoor">
+	<view class="button" onTap="open">		
+		扫码开门	
+	</view>
+</view>
+<view class="bottomBar">	
+	我是底边栏
+</view>

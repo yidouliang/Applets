@@ -1,0 +1,39 @@
+.swiper-item{
+	height: 350rpx;
+	width: 100%
+} 
+
+.bc_green{
+	background-color: green; 
+}
+
+.bc_red{
+	background-color: red; 
+}
+
+.bc_yellow{
+	background-color: yellow; 
+}
+
+.openDoor {
+	height: 3.5rem;
+	width: 4.9rem;
+	padding: 2rem 0 0 2.55rem;
+}
+
+.openDoor .button {
+	width: 2.5rem;
+	height: 2.5rem;
+	border: solid 0.01rem black;
+	border-radius: 50%;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+.bottomBar {
+	height: 1rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	border: solid 0.01rem black; 
+}
