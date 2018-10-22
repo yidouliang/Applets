@@ -1,8 +1,23 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/personal/personal"
   ],
   "window": {
-    "defaultTitle": "My App"
+    "defaultTitle": "一斗粮"
+  },
+  "tabBar": {
+    "items": [{
+      "pagePath": "pages/index/index",
+      "name": "扫码开门"
+    },{
+      "pagePath": "pages/activity/activity",
+      "name": "活动信息"
+    },{
+      "pagePath": "pages/personal/personal",
+      "name": "个人信息"
+    }]
   }
+ 
 }

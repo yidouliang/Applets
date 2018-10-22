@@ -1,0 +1,3 @@
+<view>活动有礼</view>
+<view>我们的活动</view>
+<grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" />
