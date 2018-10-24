@@ -30,10 +30,8 @@
 	text-align: center;
 }
 
-.bottomBar {
-	height: 1rem;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	border: solid 0.01rem black; 
+.scan-code {
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-top: 0.4rem;
 }

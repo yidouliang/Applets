@@ -9,9 +9,6 @@
 </view>
 <view class="openDoor">
 	<view class="button" onTap="open">		
-		扫码开门	
+		<image src="/images/icon/扫码开门.png" class="scan-code"/>	
 	</view>
 </view>
-<!-- <view class="bottomBar">	
-	我是底边栏
-</view> -->

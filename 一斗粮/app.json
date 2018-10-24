@@ -8,9 +8,14 @@
     "defaultTitle": "一斗粮"
   },
   "tabBar": {
-    "items": [{
+	"textColor": "white",
+	"backgroundColor": "red",
+	"selectedColor": "white",
+	"items": [{
       "pagePath": "pages/index/index",
-      "name": "扫码开门"
+      "name": "扫码开门",
+	  "icon": "/images/icon/扫码开门.png",
+	  "avtiveIcon": "/images/icon/扫码开门.png"
     },{
       "pagePath": "pages/activity/activity",
       "name": "活动信息"

@@ -7,16 +7,20 @@ Page({
 	},
 
 	open() {
+		var app = getApp();
 		my.getAuthCode({
 			scopes: 'auth_user',
 			success: (res) => {
-				my.alert({
-					content: res.authCode,
+				my.getAuthUserInfo({
+					success: ({nickName, avatar}) => {
+						app.avatar = avatar;
+						app.nickName = nickName;
+					}
 				});
 				my.scan({
 					type: 'qr',
 					success: (res) => {
-						my.alert({ title: res.code });
+						// console.log(res.code);
 					},
 				});
 			},

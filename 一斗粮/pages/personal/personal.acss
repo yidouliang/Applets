@@ -1,0 +1,17 @@
+.user-info {
+	width: 100%;
+	height: 3rem;
+	text-align: center;
+	padding-top: 0.5rem;
+}
+
+.avatar {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+
+.username {
+	height: 1rem;
+	line-height: 1rem;
+}
