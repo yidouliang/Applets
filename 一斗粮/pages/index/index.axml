@@ -9,6 +9,6 @@
 </view>
 <view class="openDoor">
 	<view class="button" onTap="open">		
-		<image src="/images/icon/扫码开门.png" class="scan-code"/>	
+		<image src="/images/icon/open.png" class="scan-code"/>	
 	</view>
 </view>

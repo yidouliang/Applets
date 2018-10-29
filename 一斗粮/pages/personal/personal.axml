@@ -2,7 +2,7 @@
 		<view>
 			<image class="avatar" src={{imgUrl}} />
 		</view>
-		<view class="username">{{username}}{{nam}}</view>
+		<view class="username">{{username}}</view>
 </view>
 <!-- <button type="default" onTap="test">Button</button> -->
 <grid columnNum="{{2}}" list="{{list2}}" />

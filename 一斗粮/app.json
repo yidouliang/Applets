@@ -8,20 +8,24 @@
     "defaultTitle": "一斗粮"
   },
   "tabBar": {
-	"textColor": "white",
-	"backgroundColor": "red",
-	"selectedColor": "white",
+	"textColor": "#ffffff",
+	"backgroundColor": "#f20d0d",
+	"selectedColor": "#ffffff",
 	"items": [{
       "pagePath": "pages/index/index",
       "name": "扫码开门",
-	  "icon": "/images/icon/扫码开门.png",
-	  "avtiveIcon": "/images/icon/扫码开门.png"
+	  "icon": "/images/icon/open.png",
+	  "avtiveIcon": "/images/icon/open.png"
     },{
       "pagePath": "pages/activity/activity",
-      "name": "活动信息"
+      "name": "活动信息",
+	  "icon": "/images/icon/active.png",
+	  "avtiveIcon": "/images/icon/active.png"
     },{
       "pagePath": "pages/personal/personal",
-      "name": "个人信息"
+      "name": "个人信息",
+	  "icon": "/images/icon/aboutMe.png",
+	  "avtiveIcon": "/images/icon/aboutMe.png"
     }]
   }
  

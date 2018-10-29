@@ -14,7 +14,9 @@ Page({
 				my.getAuthUserInfo({
 					success: ({nickName, avatar}) => {
 						app.avatar = avatar;
+						console.log(avatar);
 						app.nickName = nickName;
+						console.log(nickName);
 					}
 				});
 				my.scan({

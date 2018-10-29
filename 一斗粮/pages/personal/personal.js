@@ -23,12 +23,4 @@ Page({
 	  username: getApp().nickName,
   },
 
-  test() {
-	  var app = getApp();
-	  console.log(app.nam);
-	  var other = "sss";
-	  app.nam = other;
-	  console.log(app.nam);
-  }
-
 })
