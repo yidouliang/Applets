@@ -1,8 +1,7 @@
 <view class="user-info">
 		<view>
-			<image class="avatar" src={{imgUrl}} />
+			<image class="avatar" src={{avatar}} />
 		</view>
-		<view class="username">{{username}}</view>
+		<view class="username">{{nickName}}</view>
 </view>
-<!-- <button type="default" onTap="test">Button</button> -->
 <grid columnNum="{{2}}" list="{{list2}}" />

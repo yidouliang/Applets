@@ -8,7 +8,7 @@
 	</swiper>
 </view>
 <view class="openDoor">
-	<view class="button" onTap="open">		
+	<view class="button" onTap="openDoor">		
 		<image src="/images/icon/open.png" class="scan-code"/>	
 	</view>
 </view>

@@ -6,26 +6,42 @@ Page({
 		interval: 3000,
 	},
 
-	open() {
-		var app = getApp();
-		my.getAuthCode({
-			scopes: 'auth_user',
+	/**
+	 * 扫码开门
+	 */
+	openDoor() {
+
+		let res = my.getStorageInfoSync();
+		if (res.keys.length == 0) {
+			my.getAuthCode({
+				scopes: 'auth_user',
+				success: (res) => {				
+					// 将用户uid写入缓存
+					my.setStorage({
+						key: 'id',
+						data: {
+							"uid": res.authCode,
+						},
+					});
+				},
+			});
+		} else {
+			this.scanCode();
+		}
+	},
+
+	/**
+	 * 调用摄像头进行扫码
+	 */
+	scanCode() {
+		my.scan({
+			type: 'qr',
 			success: (res) => {
-				my.getAuthUserInfo({
-					success: ({nickName, avatar}) => {
-						app.avatar = avatar;
-						console.log(avatar);
-						app.nickName = nickName;
-						console.log(nickName);
-					}
-				});
-				my.scan({
-					type: 'qr',
-					success: (res) => {
-						// console.log(res.code);
-					},
-				});
+				// console.log(res.code);
 			},
 		});
 	},
+	
 })
+
+

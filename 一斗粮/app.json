@@ -4,9 +4,11 @@
     "pages/activity/activity",
     "pages/personal/personal"
   ],
+
   "window": {
     "defaultTitle": "一斗粮"
   },
+
   "tabBar": {
 	"textColor": "#ffffff",
 	"backgroundColor": "#f20d0d",
@@ -28,5 +30,7 @@
 	  "avtiveIcon": "/images/icon/aboutMe.png"
     }]
   }
+
+
  
 }
