@@ -12,7 +12,7 @@ Page({
 	openDoor() {
 
 		let res = my.getStorageInfoSync();
-		// if (res.keys.length == 0) {
+		if (res.keys.length == 0) {
 			my.getAuthCode({
 				scopes: 'auth_user',
 				success: (res) => {	
@@ -24,26 +24,28 @@ Page({
 								authCode: res.authCode
 							},
 						  success: (res) => {
-							console.log("我已成功请求");
-							console.log(res.data.data);
+							  // 将用户uid写入缓存
+							  my.setStorage({
+								  key: 'id',
+								  data: {
+									  "uid": res.data.data,
+								  },
+							  });
 						  },
 						  fail: () => {
-							  console.log("服务异常");
+							  my.alert({
+								  title: '出错了',
+								  content: '远方服务异常',
+								  buttonText: '我知道了'
+							  });
 						  }
 						});
 					}			
-					// 将用户uid写入缓存
-					my.setStorage({
-						key: 'id',
-						data: {
-							"uid": res.authCode,
-						},
-					});
 				},
 			});
-		// } else {
-		// 	this.scanCode();
-		// }
+		} else {
+			this.scanCode();
+		}
 	},
 
 	/**
