@@ -3,19 +3,19 @@ Page({
   data: {
 	  list2: [
 		  {
-			  icon: 'https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png',
+        icon: "/images/icon/me.png",
 			  text: '我的信息'
 		  },
 		  {
-			  icon: 'https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png',
+        icon: "/images/icon/order.png",
 			  text: '我的订单'
 		  },
 		  {
-			  icon: 'https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png',
+        icon: "/images/icon/collect.png",
 			  text: '我的收藏'
 		  },
 		  {
-			  icon: 'https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png',
+        icon: "/images/icon/set.png",
 			  text: '我的设置'
 		  }
 	  ],
@@ -40,7 +40,7 @@ Page({
 					if (res.authCode) {
 						// 发送请求，获取uid
 						my.httpRequest({
-							url: 'http://localhost:9090/api/alipay/auth',
+              url: 'http://www.yidouliang.club/api/alipay/auth',
 							data: {
 								authCode: res.authCode
 							},

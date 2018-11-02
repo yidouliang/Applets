@@ -4,6 +4,7 @@ Page({
 		indicatorDots: true,
 		autoplay: true,
 		interval: 3000,
+    clicktext: "\n扫码开门",
 	},
 
 	/**
@@ -19,7 +20,7 @@ Page({
 					if (res.authCode) {
 						// 发送请求，获取uid
 						my.httpRequest({
-							url: 'http://localhost:9090/api/alipay/auth', 
+              url: 'http://www.yidouliang.club/api/alipay/auth', 
 							data: {
 								authCode: res.authCode
 							},
