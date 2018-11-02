@@ -2,35 +2,38 @@
   "pages": [
     "pages/index/index",
     "pages/activity/activity",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/cup/cup",
+    "pages/buniess/buniess",
+    "pages/notice/notice",
+    "pages/discount/discount",
+    "pages/share/share"
   ],
-
   "window": {
     "defaultTitle": "一斗粮"
   },
-
   "tabBar": {
-	"textColor": "#ffffff",
-	"backgroundColor": "#f20d0d",
-	"selectedColor": "#ffffff",
-	"items": [{
-      "pagePath": "pages/index/index",
-      "name": "扫码开门",
-	  "icon": "/images/icon/open.png",
-	  "avtiveIcon": "/images/icon/open.png"
-    },{
-      "pagePath": "pages/activity/activity",
-      "name": "活动信息",
-	  "icon": "/images/icon/active.png",
-	  "avtiveIcon": "/images/icon/active.png"
-    },{
-      "pagePath": "pages/personal/personal",
-      "name": "个人信息",
-	  "icon": "/images/icon/aboutMe.png",
-	  "avtiveIcon": "/images/icon/aboutMe.png"
-    }]
+    "textColor": "#2c2c2c",
+    "selectedColor": "#d81e06",
+    "items": [
+      {
+        "pagePath": "pages/activity/activity",
+        "name": "活动信息",
+        "icon": "/images/icon/activity.png",
+        "avtiveIcon": "/images/icon/redac.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "name": "扫码开门",
+        "icon": "/images/icon/home.png",
+        "avtiveIcon": "/images/icon/redhome.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "name": "个人信息",
+        "icon": "/images/icon/me.png",
+        "avtiveIcon": "/images/icon/redme.png"
+      }
+    ]
   }
-
-
- 
 }

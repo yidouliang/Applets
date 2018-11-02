@@ -4,6 +4,7 @@ Page({
 		indicatorDots: true,
 		autoplay: true,
 		interval: 3000,
+    clicktext: "\n扫码开门",
 	},
 
 	/**

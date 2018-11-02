@@ -8,7 +8,9 @@
 	</swiper>
 </view>
 <view class="openDoor">
-	<view class="button" onTap="openDoor">		
+	<view class="button" onTap="openDoor">
 		<image src="/images/icon/open.png" class="scan-code"/>	
+    <text class="clicktext">{{clicktext}}</text>
 	</view>
+  
 </view>
