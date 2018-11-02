@@ -32,9 +32,38 @@ Page({
 	 * 获取用户的头像和昵称
 	 */
 	getUserInfo() {
+		let storage = my.getStorageInfoSync();
 		my.getAuthCode({
 			scopes: 'auth_user',
 			success: (res) => {
+				if (storage.keys.length == 0) {
+					if (res.authCode) {
+						// 发送请求，获取uid
+						my.httpRequest({
+							url: 'http://localhost:9090/api/alipay/auth',
+							data: {
+								authCode: res.authCode
+							},
+							success: (res) => {
+								// 将用户uid写入缓存
+								my.setStorage({
+									key: 'id',
+									data: {
+										"uid": res.data.data,
+									},
+								});
+							},
+							fail: () => {
+								my.alert({
+									title: '出错了',
+									content: '远方服务异常',
+									buttonText: '我知道了'
+								});
+							}
+						});
+					}
+				}
+
 				// 获取用户的昵称和头像
 				my.getAuthUserInfo({
 					success: ({ nickName, avatar }) => {
@@ -45,15 +74,7 @@ Page({
 
 					}
 				});
-				
-				// 将用户uid写入缓存
-				my.setStorageSync({
-					key: 'id',
-					data: {
-						"uid": res.authCode,
-					},
-				});
-			}
+			},
 		});
 	}
 
