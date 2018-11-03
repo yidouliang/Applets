@@ -4,4 +4,4 @@
 		</view>
 		<view class="username">{{nickName}}</view>
 </view>
-<grid columnNum="{{2}}" list="{{list2}}" />
+<grid columnNum="{{2}}" list="{{list2}}"   onGridItemClick="onItemClick"/>

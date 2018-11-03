@@ -76,6 +76,17 @@ Page({
 				});
 			},
 		});
+	},
+
+	/**
+	 * 用户点击模块
+	 */
+	onItemClick(ev) {
+		if (ev.detail.index == 0) {
+			my.redirectTo({
+				url: '../myInfo/myInfo'
+			})
+		}
 	}
 
 })

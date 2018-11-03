@@ -7,7 +7,8 @@
     "pages/buniess/buniess",
     "pages/notice/notice",
     "pages/discount/discount",
-    "pages/share/share"
+    "pages/share/share",
+    "pages/myInfo/myInfo"
   ],
   "window": {
     "defaultTitle": "一斗粮"

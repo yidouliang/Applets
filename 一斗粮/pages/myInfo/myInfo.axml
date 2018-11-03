@@ -1,0 +1,13 @@
+<view class="info-card">
+	<view class="avatar">
+		我是头像
+	</view>
+
+	<view class="info-detail">
+		<view>{{nickName}}</view>
+	</view>
+</view>
+<view class="info-list">
+	{{telphone}}
+</view>
+  
