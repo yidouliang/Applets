@@ -20,7 +20,8 @@ Page({
 					if (res.authCode) {
 						// 发送请求，获取uid
 						my.httpRequest({
-							url: 'http://www.yidouliang.club/api/alipay/auth', 
+							// url:   'http://www.yidouliang.club/api/alipay/auth', 
+							url: 'http://192.168.0.87:9090/api/alipay/auth',
 							data: {
 								authCode: res.authCode
 							},

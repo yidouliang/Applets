@@ -1,4 +1,9 @@
 Page({
+
+	data: {
+		
+	},
+
 	onShow() {
 		this.getInfo();
 	},
@@ -30,13 +35,30 @@ Page({
 	 */
 	getInfoFromServer(consumerId) {
 		my.httpRequest({
-		url:'http://localhost:9090/api/consumer/' + consumerId,
+			url:'http://192.168.0.87:9090/api/consumer/' + consumerId,
 		  success: (res) => {
 			  this.setData({
 				  nickName: res.data.data.name,
-				  telphone: res.data.data.telphone,
+				telphone: res.data.data.telphone,
+				avatar: res.data.data.avatar,
 			  });
 		  },
 		});	
+	},
+
+	/**
+	 * 用户绑定手机号
+	 */
+	bindPhone() {
+		my.alert({
+			title: '绑定手机',
+			content: '授权绑定手机号，享受更多权益',
+			buttonText: '确认授权',
+			success: () => {
+				my.alert({
+					title: '授权成功',
+				});
+			},
+		});
 	}
 })

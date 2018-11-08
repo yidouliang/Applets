@@ -1,13 +1,20 @@
 <view class="info-card">
-	<view class="avatar">
-		我是头像
+	<view>
+		<image src={{avatar}} class="avatar" />
 	</view>
-
-	<view class="info-detail">
-		<view>{{nickName}}</view>
-	</view>
+	<view class="nickName">Seven</view>
+	<view class="level">普通用户</view>
 </view>
 <view class="info-list">
-	{{telphone}}
+	我的电话：<view class="info">
+		<!-- <button type="default"   class="bind" onTap="bindPhone">绑定手机</button> -->
+		{{telphone}}
+		</view>
+</view>
+<view class="info-list">	
+	我的积分：<text class="info">2333分</text>
+</view>
+<view class="info-list">
+	我的优惠券：<text class="info">3张</text>
 </view>
   
