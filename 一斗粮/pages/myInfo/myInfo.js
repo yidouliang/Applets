@@ -35,7 +35,7 @@ Page({
 	 */
 	getInfoFromServer(consumerId) {
 		my.httpRequest({
-			url:'http://192.168.0.87:9090/api/consumer/' + consumerId,
+			url:'http://localhost:9090/api/consumer/' + consumerId,
 		  success: (res) => {
 			  this.setData({
 				  nickName: res.data.data.name,

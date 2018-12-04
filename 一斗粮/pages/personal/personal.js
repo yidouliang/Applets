@@ -86,6 +86,10 @@ Page({
 			my.redirectTo({
 				url: '../myInfo/myInfo'
 			})
+		} else if (ev.detail.index == 1) {
+			my.redirectTo({
+				url: '../myOrder/myOrder'
+			})
 		}
 	}
 

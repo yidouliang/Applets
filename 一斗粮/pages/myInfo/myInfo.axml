@@ -2,7 +2,7 @@
 	<view>
 		<image src={{avatar}} class="avatar" />
 	</view>
-	<view class="nickName">Seven</view>
+	<view class="nickName">{{nickName}}</view>
 	<view class="level">普通用户</view>
 </view>
 <view class="info-list">

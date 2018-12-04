@@ -1,0 +1,21 @@
+<view class="title">我的订单</view>
+
+<view class="order-list">
+  <view class="order-card">
+
+    <view class="left-box">编号：{{orderNum}}</view>
+    <view class="right-box">状态：{{orderStatus}}</view>
+
+    <block a:for="{{orderItems}}">
+      <view class="order-detail">
+        <view class="item">{{item.productName}}</view>
+        <view class='item'>数量：{{item.buyNum}}</view>
+        <view class="item">单价：{{item.productPrice}}元</view>
+      </view>
+    </block>
+  
+    <view class="left-box">时间：{{createTime}}</view>
+    <view class="right-box">总价：{{payAmount}}元</view>
+
+  </view>
+</view>
