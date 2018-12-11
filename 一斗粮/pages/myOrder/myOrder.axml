@@ -1,21 +1,50 @@
-<view class="title">我的订单</view>
-
+<view class="title">我的订单
+</view>
 <view class="order-list">
-  <view class="order-card">
-
-    <view class="left-box">编号：{{orderNum}}</view>
-    <view class="right-box">状态：{{orderStatus}}</view>
-
-    <block a:for="{{orderItems}}">
-      <view class="order-detail">
-        <view class="item">{{item.productName}}</view>
-        <view class='item'>数量：{{item.buyNum}}</view>
-        <view class="item">单价：{{item.productPrice}}元</view>
-      </view>
+  <tabs tabs="{{tabs}}" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}">
+    <block a:for="{{tabs}}" class="tab-content shadow">
+      <tab-content key="{{index}}">
+          <view a:if="{{index == 0}}">
+            <view class="ctime">{{paidOrder.createTime}}  待支付
+            </view>
+            <block a:for="{{paidOrder.orderInfoDetailDTOS}}">
+              <view class="order-detail ">
+                <view class="pname">{{item.productName}}
+                </view>
+               
+                <view class="price">单价：{{item.productPrice}}元
+                </view>
+                 <view class='count'>数量：{{item.buyNum}}
+                </view>
+                
+              </view>
+            </block>
+            <view class="totalPrice">实付款：{{paidOrder.payAmount}}元
+            </view>
+            <view class="serialNumber">订单编号：{{paidOrder.serialNumber}}
+            </view>
+          </view>
+          <view a:else class="order-box shadow">
+            <view class="ctime">{{waitOrder.createTime}}  待支付
+            </view>
+            <block a:for="{{waitOrder.orderInfoDetailDTOS}}">
+              <view class="order-detail ">
+                <view class="pname">{{item.productName}}
+                </view>
+               
+                <view class="price">单价：{{item.productPrice}}元
+                </view>
+                 <view class='count'>数量：{{item.buyNum}}
+                </view>
+                
+              </view>
+            </block>
+            <view class="totalPrice">实付款：{{waitOrder.payAmount}}元
+            </view>
+            <view class="serialNumber">订单编号：{{waitOrder.serialNumber}}
+            </view>
+        </view>
+      </tab-content>
     </block>
-  
-    <view class="left-box">时间：{{createTime}}</view>
-    <view class="right-box">总价：{{payAmount}}元</view>
-
-  </view>
+  </tabs>
 </view>

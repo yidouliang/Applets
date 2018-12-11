@@ -9,7 +9,8 @@
     "pages/discount/discount",
     "pages/share/share",
     "pages/myInfo/myInfo",
-    "pages/myOrder/myOrder"
+    "pages/myOrder/myOrder",
+    "pages/orderDetail/orderDetail"
   ],
   "window": {
     "defaultTitle": "一斗粮"

@@ -5,66 +5,44 @@
     line-height: 0.3rem;
 }
 
-.order-list {
-    padding: 0.2rem 0.4rem 0.2rem 0.2rem;
-    height: 98%;
-}
 
-.order-card {
-    border: solid 1px #000000;
-    width: 100%;
-    padding: 0.1rem;
-    height: 3rem;
-    border: 1px solid rgb(3, 169, 244);
-    box-shadow: 5px 5px 5px #e2e2e2;
+/* .shadow {
+    position: relative;
+    max-width: 6.1rem;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+                0px 0px 20px rgba(0,0,0,0.1);
+} */
+
+.ctime {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: .3rem;
+  margin-bottom: .2rem;
 }
 
 .order-detail {
-    height: 0.1rem;
-    margin: 0.8rem 0.1rem 0.1rem 0.1rem;
-    clear: both;
+   border-bottom:solid 0.01rem #BBBBBB;
+   margin: .1rem .2rem;
 }
 
-.img {
-    float: left;
-    width: 30%;
-    height: 2rem;
-    border: solid 1px #000000;
+.serialNumber {
+  margin-top: .5rem;
+  font-size: .3rem;
 }
 
-.info {
-    float: left;
-    width: 68%;
-    height: 2rem;
-    border: solid 1px #000000;
+.pname {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
-.left-box {
-    float: left;
-    text-align: left;
-    padding-left: 0.1rem; 
-    height: 0.5rem;
-    line-height: 0.5rem;
-    width: 48%;
-    overflow: hidden;
-    margin-top: 0.2rem;
+.totalPrice {
+  margin-top: .3rem;
 }
 
-.item {
-    float: left;
-    width: 25%;
-    padding: 0 0.2rem 0 0.2rem;
-    text-align: center;
-    font-size: 12px;
-    margin-top: 0.1rem;
+.count {
+  float: right;
+  margin-top: -.5rem;
 }
 
-.right-box {
-    float: left;
-    text-align: right;
-    padding-right: 0.3rem; 
-    height: 0.5rem;
-    line-height: 0.5rem;
-    width: 45%;
-    margin-top: 0.2rem;
-}
+
